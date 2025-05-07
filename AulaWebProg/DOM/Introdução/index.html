@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="nome" placeholder="Seu nome">
+    <button onclick="mostrarNome">Enviar</button>
+    <p id="resultado"></p>
+    <script>function mostarNome() {
+            const nomeDigitado = document.getElementById("nome").value;
+            document.getElementById("resultado").textContent = `Olá, ${nomeDigitado}!`;
+        }
+    </script>
+    <button onclick="modoEscuro()">Escuro</button>
+    <button onclick="modoClaro()">Claro</button>
+    <script>
+        function modoEscuro() {
+            document.body.style.backgroundColor = "#222";
+            document.body.style.color = "#fff";
+        }
+        function modoClaro() {
+            document.body.style.backgroundColor = "#ffffff";
+            document.body.style.color = "black";
+        }
+    </script>
+    <img src="https://picsum.photos/200" alt="" id="foto">
+    <button onclick="toggleImagem()">Mostrar/Esconder</button>
+    <script>
+        function toggleImagem() {
+            const img = document.getElementById("foto");
+            img.style.display = (img.style.display === "none" ? "block" : "none")
+        }
+    </script>
+    <input type="text" class="dados" placeholder="campo1">
+    <input type="text" class="dados" placeholder="campo2">
+    <button onclick="lerCampos()">Ler Campos</button>
+    <script>
+        function lerCampos(){
+            const campos = document.querySelectorAll(".dados")
+            campos.forEach((campo, index) => {alert(`Canpo ${index+1}:${campo.value}`)})
+        }
+    </script>
+    <button id="btnClick">Clique aqui</button>
+    <script>
+      document.getElementById("btnClick").addEventListener("click", () => {
+        alert("Botão clicado!");
+      });
+    </script>
+    
+    <p id="textoDblClick">Dê dois cliques aqui</p>
+    <script>
+      document.getElementById("textoDblClick").addEventListener("dblclick", () => {
+        alert("Você deu dois cliques!");
+      });
+    </script>
+    
+    <div id="areaMouseOver" style="width:150px; height:100px; background:#ccc;">Passe o mouse</div>
+    <script>
+      document.getElementById("areaMouseOver").addEventListener("mouseover", () => {
+        alert("Mouse sobre a área!");
+      });
+    </script>
+    <input type="text" id="campoTecla" placeholder="caixa 1">
+    <script>
+      document.getElementById("campoTecla").addEventListener("keydown", (e) => {
+        console.log("Tecla pressionada: " + e.key);
+      });
+    </script>
+    
+    <input type="text" id="campoInput" placeholder="caixa 2">
+    <script>
+      document.getElementById("campoInput").addEventListener("input", () => {
+        console.log("Valor atual: " + document.getElementById("campoInput").value);
+      });
+    </script>
+    
+    <form id="formExemplo">
+        <input type="text" placeholder="Nome">
+        <button type="submit">Enviar</button>
+      </form>
+      <script>
+        document.getElementById("formExemplo").addEventListener("submit", (e) => {
+          e.preventDefault();
+          alert("Formulário enviado!");
+        });
+      </script>
+</body>
+
+</html>
