@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnico Já!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="hd1">
+        <img id="logo" src="logoCut.png" width="100px" alt="">
+    </header>
+    <main id="main1">
+        <section id="sec1">
+            <div id="apresentacao">
+                <h1>Conheça-nos</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque illo nobis, fugiat, aspernatur
+                    sed consequatur est obcaecati qui expedita accusantium voluptatibus et iste repellat nihil,
+                    repellendus iure vel mollitia perspiciatis soluta. Asperiores sapiente, maxime architecto
+                    perspiciatis iusto ipsam saepe? Magnam, et ratione. Suscipit repellat optio atque aspernatur illum
+                    ea eaque veritatis, numquam quam asperiores sint saepe odio delectus recusandae pariatur
+                    exercitationem. Inventore est ab sequi culpa dignissimos ullam tempore consequuntur repellendus at
+                    quia soluta eos quis autem officia ratione nam maiores dolores iure accusantium, modi esse!
+                    Repudiandae, ipsam magni eaque doloremque eum vero eveniet. Saepe odit eum animi in nemo.</p>
+            </div>
+            <div id="forms">
+                <h1 id="txt2">Técnico já!</h1>
+                <form action="https://formsubmit.co/tecnicoja01@gmail.com" method="POST">
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+                    </div>
+
+                    <div class="campo" id="container">
+                        <div class="divsion">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Seu e-mail" required />
+                        </div>
+
+                        <div class="divsion">
+                            <label for="email">Empresa:</label>
+                            <select name="empresas" id="empresas" required>
+                                <option value="" disabled selected>Selecione uma empresa</option>
+                                <option value="fulano@gmail.com">Fulano de Tal</option>
+                                <option value="xiru@gmail.com">Xiru da Silva</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Explique seu problema" required></textarea>
+                    </div>
+                    <button type="submit" class="botao">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

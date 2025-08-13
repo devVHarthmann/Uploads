@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#hd1{
+    width: 100%;
+    height: 15vh;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: #004aad 7px solid;
+}
+#tit1{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    margin-left: 40px;
+    font-weight: 400;
+}
+#main1{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+}
+#sec1{
+    width: 90%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.296);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#apresentacao{
+    font-family: "Montserrat", sans-serif;
+    padding: 40px;
+    height: 90%;
+    width: 45%;
+    
+}
+#forms{
+    width: 45%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.campo {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.botao{
+    width: 30vw;
+    height: 8vh;
+    border: #004aad 2px solid;
+    border-radius: 3px;
+    font-weight: 900;
+    transition: 1s;
+    background-color: #004aad;
+}
+.botao:hover{
+    background-color: #023a85;
+    transition: 1s;
+}
+.campo input{
+    height: 6vh;
+    border: #004aad 2px solid;
+    border-radius: 3px;
+    padding: 10px ;
+    padding-left: 6px;
+}
+
+#mensagem{
+    min-width: 30vw;
+    height: 12vh;
+    border: #004aad 2px solid;
+    resize: none;
+    border-radius: 3px;
+    padding: 10px;
+}
+input::placeholder{
+    padding-left: 5px;
+}
+textarea::placeholder{
+    padding-left: 5px;
+}
+#txt2{
+    width: 30vw;
+    font-size: 40pt;
+}
+.divsion{
+    display: flex;
+    flex-direction: column;
+    width: 14.8vw;
+}
+#container{
+    flex-direction: row;
+    gap: 0.4vw;
+}
+#empresas{
+    width: 14.8vw;
+    height: 6vh;
+    border: #004aad 2px solid;
+    border-radius: 3px;
+}
+#empresas:invalid {
+  color: #a0a0a0; /* Um cinza claro para a cor do texto */
+}
